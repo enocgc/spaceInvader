@@ -5,7 +5,7 @@ using UnityEngine;
 public class bala : MonoBehaviour {
 
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag=="enemigo1")
         {

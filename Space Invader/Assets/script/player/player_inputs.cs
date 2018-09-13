@@ -21,12 +21,8 @@ public class player_inputs : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
     //procesamiento de funcionalidad con el procesador
-    private void FixedUpdate()
+    void Update()
     {
         
         if (Input.GetKeyUp(KeyCode.LeftArrow) )

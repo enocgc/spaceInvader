@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4418021764062334}
   - component: {fileID: 33529158270225564}
   - component: {fileID: 23180459866279602}
-  - component: {fileID: 65369225815820056}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -39,10 +38,10 @@ GameObject:
   - component: {fileID: 4254300101014136}
   - component: {fileID: 54135113855598814}
   - component: {fileID: 65321404837254688}
-  - component: {fileID: 114538446044327882}
+  - component: {fileID: 114080322352193750}
   m_Layer: 0
-  m_Name: bala
-  m_TagString: BalaPlayer
+  m_Name: balaEnemigo
+  m_TagString: BalaEnemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,24 +137,12 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1741220253775600}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1848931, y: 0.1848931, z: 0.1848931}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65369225815820056
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1595258328470314}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114538446044327882
+--- !u!114 &114080322352193750
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,6 +150,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741220253775600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500a3ad0fb1a6c247ba04bcf412a0fda, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dddcf882eda59448b56fedbfbde1dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

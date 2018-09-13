@@ -8,6 +8,9 @@ TagManager:
   - enemigo2
   - enemigo3
   - enemigo4
+  - player
+  - BalaEnemigo
+  - BalaPlayer
   layers:
   - Default
   - TransparentFX
