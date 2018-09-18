@@ -24,15 +24,16 @@ public class player_inputs : MonoBehaviour {
     //procesamiento de funcionalidad con el procesador
     void Update()
     {
-        
-        if (Input.GetKeyUp(KeyCode.LeftArrow) )
-        {
-            player_engine.instance.moverIzquierda();
-        }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        float mover = Input.GetAxis("Horizontal");
+        if (mover >0)
         {
             player_engine.instance.moverDerecha();
         }
+        if (mover < 0)
+        {
+            player_engine.instance.moverIzquierda();
+        }
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             player_bala.instance.disparar();

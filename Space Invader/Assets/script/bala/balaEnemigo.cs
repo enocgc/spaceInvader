@@ -6,7 +6,7 @@ public class balaEnemigo : MonoBehaviour {
 
     void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.tag+" choco");
+        //Debug.Log(collision.gameObject.tag+" choco");
         if (collision.gameObject.tag == "Player")
         {
             //collision.gameObject.transform.position

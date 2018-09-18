@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f01eb538b583054e8a5c0e9775e0531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadMovimiento: 3
   player: {fileID: 1756411975157950}
 --- !u!114 &114902522064953932
 MonoBehaviour:

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemigocomportamiento : MonoBehaviour {
+public class colisionpared : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -10,7 +11,6 @@ public class enemigocomportamiento : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       
-    }
-   
+		
+	}
 }

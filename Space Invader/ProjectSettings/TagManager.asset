@@ -11,6 +11,8 @@ TagManager:
   - player
   - BalaEnemigo
   - BalaPlayer
+  - paredIzquierda
+  - paredDerecha
   layers:
   - Default
   - TransparentFX
