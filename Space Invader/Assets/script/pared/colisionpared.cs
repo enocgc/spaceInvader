@@ -13,4 +13,5 @@ public class colisionpared : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
