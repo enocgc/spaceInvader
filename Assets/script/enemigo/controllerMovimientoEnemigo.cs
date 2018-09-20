@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class controllerMovimientoEnemigo : MonoBehaviour {
     public int direccion = 1;
-	// Use this for initialization
-	void Start () {
+    public int velocidad = 1;
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -14,11 +15,11 @@ public class controllerMovimientoEnemigo : MonoBehaviour {
     {
         if (direccion == 1)
         {
-            transform.Translate(Vector3.right * 1 * Time.deltaTime);
+            transform.Translate(Vector3.right * velocidad * Time.deltaTime);
         }
         if (direccion == 2)
         {
-            transform.Translate(Vector3.left * 1 * Time.deltaTime);
+            transform.Translate(Vector3.left * velocidad * Time.deltaTime);
         }
     }
     void OnTriggerEnter(Collider collision)
