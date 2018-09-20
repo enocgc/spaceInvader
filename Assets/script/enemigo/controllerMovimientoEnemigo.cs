@@ -27,11 +27,11 @@ public class controllerMovimientoEnemigo : MonoBehaviour {
         if (collision.gameObject.tag == "paredDerecha")
         {
           
-            direccion = 1;
+            direccion = 2;
         }
         if (collision.gameObject.tag == "paredIzquierda")
         {
-            direccion = 2;
+            direccion = 1;
         }
     }
 }
