@@ -27,12 +27,18 @@ public class controllerMovimientoEnemigo : MonoBehaviour {
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "paredDerecha")
         {
-          
+            bajarenemigos();
             direccion = 2;
         }
         if (collision.gameObject.tag == "paredIzquierda")
         {
+            bajarenemigos();
             direccion = 1;
         }
+    }
+    //se encarga de bajar los enemigos
+    public void bajarenemigos()
+    {
+        transform.Translate(Vector3.down * (velocidad+3) * Time.deltaTime);
     }
 }
