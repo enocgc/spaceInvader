@@ -27,7 +27,9 @@ public class bala : MonoBehaviour {
         }
         if (collision.gameObject.tag == "enemigo4")
         {
-            puntos.instance.subirPuntos(300);
+            //puntos.instance.subirPuntos(300);
+            int puntosAleatorios=Random.Range(40,300);
+            puntos.instance.subirPuntos(puntosAleatorios);
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
