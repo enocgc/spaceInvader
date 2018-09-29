@@ -23,14 +23,14 @@ public class player_inputs : MonoBehaviour {
 	
     //procesamiento de funcionalidad con el procesador
     void Update()
-    {
+    {//movimiento del player
         float mover = Input.GetAxis("Horizontal");
         if (mover >0)
-        {
+        {//mover derecha
             player_engine.instance.moverDerecha();
         }
         if (mover < 0)
-        {
+        {//mover izquierda
             player_engine.instance.moverIzquierda();
         }
 

@@ -22,7 +22,7 @@ public class enemigo_bala : MonoBehaviour {
         GameObject bala = Instantiate(disparo, transform.position, transform.rotation);
         bala.GetComponent<Rigidbody>().AddRelativeForce(Vector3.down, ForceMode.VelocityChange);//fuerza mas impulso
         Destroy(bala, 5f);
-        Debug.Log("nueva vala");
+        //Debug.Log("nueva vala");
     }
 
     void tiempoAleatorio()

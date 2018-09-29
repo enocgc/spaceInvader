@@ -17,7 +17,9 @@ public class player_engine : MonoBehaviour {
         }
     }
 
-   public void moverDerecha()
+   
+
+    public void moverDerecha()
     {
         //Debug.Log("run:");
         player.transform.Translate( Vector3.right*velocidadMovimiento* Time.deltaTime);
