@@ -11,12 +11,12 @@ public class player_paredDetect : MonoBehaviour {
             //float mover = Input.GetAxis("Horizontal");
             //Debug.Log(mover);
             // desabilidarDerecha();
-            float mover = 01;
+            player_inputs.instance.moverPlayer(0);
             Debug.Log("choco la derecha");
         }
         if (collision.gameObject.tag == "paredIzquierda")
         {
-
+            player_inputs.instance.moverPlayer(-0);
             // desabilidarIzquierda();
             Debug.Log("choco la izquierda");
         }

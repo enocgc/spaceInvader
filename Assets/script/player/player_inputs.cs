@@ -20,11 +20,15 @@ public class player_inputs : MonoBehaviour {
     void Start () {
 		
 	}
-	
+	public float moverPlayer(float movimiento)
+    {
+        Debug.Log(movimiento);
+        return movimiento;
+    }
     //procesamiento de funcionalidad con el procesador
     void Update()
     {//movimiento del player
-        float mover = Input.GetAxis("Horizontal");
+        float mover = moverPlayer(Input.GetAxis("Horizontal"));
         if (mover >0)
         {//mover derecha
             player_engine.instance.moverDerecha();
