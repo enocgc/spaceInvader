@@ -5,6 +5,7 @@ using UnityEngine;
 public class controllerMovimientoEnemigo : MonoBehaviour {
     public int direccion = 1;
     public int velocidad = 1;
+
     // Use this for initialization
     void Start () {
 		
@@ -13,6 +14,7 @@ public class controllerMovimientoEnemigo : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (player_inputs.instance.isGame) { 
         if (direccion == 1)
         {
             transform.Translate(Vector3.right * velocidad * Time.deltaTime);
@@ -21,10 +23,11 @@ public class controllerMovimientoEnemigo : MonoBehaviour {
         {
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
         }
+        }// fin de is game
     }
     void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.tag);
+       // Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "paredDerecha")
         {
             bajarenemigos();

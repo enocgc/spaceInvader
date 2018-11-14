@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class puntos : MonoBehaviour {
     public Text puntostexto;
     public static puntos instance;
+    public int cantidadEnemigos;
     int puntosvalor = 0;
     private void Awake()
     {
@@ -24,8 +25,15 @@ public class puntos : MonoBehaviour {
 	
 	public void subirPuntos(int valor)
     {
-        Debug.Log(valor);
+        //Debug.Log(valor);
         puntosvalor = puntosvalor + valor;
         puntostexto.text = "Puntos :" + puntosvalor;
+        cantidadEnemigos--;
+        Debug.Log(cantidadEnemigos);
+        if (cantidadEnemigos == 0)
+        {
+            GameControl.instance.bloque = 1;
+            controlDelay.instance.startGame();
+        }
     }// fin de subir puntos
 }

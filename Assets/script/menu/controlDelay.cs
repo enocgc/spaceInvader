@@ -51,6 +51,6 @@ public class controlDelay : MonoBehaviour {
 
     public void startGame()
     {
-        SceneManager.LoadScene("scene-1");
+        SceneManager.LoadScene("story");
     }
 }

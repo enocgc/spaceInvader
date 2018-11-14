@@ -32,6 +32,12 @@ public class vidaController : MonoBehaviour {
         vida = vida - valor;
         vidastexto.text = "" + vida;
         quitarVida(vida);
+        if (vida == 0)
+        {
+            controlmenu.instance.activarGameOver();
+            player_inputs.instance.isGame = false;
+        }
+
     }// fin de subir puntos
 
     //quitar vida

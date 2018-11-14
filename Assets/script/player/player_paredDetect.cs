@@ -21,6 +21,28 @@ public class player_paredDetect : MonoBehaviour {
             Debug.Log("choco la izquierda");
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "paredDerecha")
+        {
+            player_inputs.instance.derecha = true;
+        }
+        if (other.gameObject.tag == "paredIzquierda")
+        {
+            player_inputs.instance.izquierda = true;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag=="paredDerecha")
+        {
+            player_inputs.instance.derecha = false;
+        }
+        if (other.gameObject.tag=="paredIzquierda")
+        {
+            player_inputs.instance.izquierda = false;
+        }
+    }
     public void desabilidarDerecha()
     {
 

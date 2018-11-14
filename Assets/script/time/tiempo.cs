@@ -29,7 +29,7 @@ public class tiempo : MonoBehaviour {
 
      IEnumerator Reloj()
     {
-        Debug.Log("couriirta");
+       // Debug.Log("curutina");
         yield return new WaitForSeconds(1f);
         segundos = segundos + 1;
 
