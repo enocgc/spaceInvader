@@ -299,6 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntostexto: {fileID: 615300877}
   cantidadEnemigos: 31
+  scena: 5
 --- !u!4 &78343449
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class puntos : MonoBehaviour {
     public Text puntostexto;
     public static puntos instance;
     public int cantidadEnemigos;
+    public int scena;
     int puntosvalor = 0;
     private void Awake()
     {
@@ -28,11 +29,11 @@ public class puntos : MonoBehaviour {
         //Debug.Log(valor);
         puntosvalor = puntosvalor + valor;
         puntostexto.text = "Puntos :" + puntosvalor;
-        cantidadEnemigos--;
+        cantidadEnemigos=(cantidadEnemigos-1);
         Debug.Log(cantidadEnemigos);
         if (cantidadEnemigos == 0)
         {
-            GameControl.instance.bloque = 1;
+            GameControl.instance.bloque = scena;
             controlDelay.instance.startGame();
         }
     }// fin de subir puntos
