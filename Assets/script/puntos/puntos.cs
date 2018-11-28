@@ -33,8 +33,29 @@ public class puntos : MonoBehaviour {
         Debug.Log(cantidadEnemigos);
         if (cantidadEnemigos == 0)
         {
-            GameControl.instance.bloque = scena;
-            controlDelay.instance.startGame();
+            if (scena == 5)
+            {
+                controlmenu.instance.activarWin();
+            }
+            else
+            {
+                GameControl.instance.bloque = scena;
+                controlDelay.instance.startGame();
+            }
+            
+
+            
         }
     }// fin de subir puntos
+    //guardar puntaje
+    public void guardarPuntos() {
+
+        PlayerPrefs.SetInt("Best-score", Control_puntos.instance.puntoFinales);
+    }
+    
+    //leer puntaje
+        public int leerPuntaje()
+    {
+        return PlayerPrefs.GetInt("Best-score", 000);
+    }// fin de leerpuntaje
 }

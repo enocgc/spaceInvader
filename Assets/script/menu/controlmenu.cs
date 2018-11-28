@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class controlmenu : MonoBehaviour {
     public static controlmenu instance;
     public GameObject panelGameOver;
+    public GameObject panelWin;
     private void Awake()
     {
         if (instance == null)
@@ -23,6 +24,10 @@ public class controlmenu : MonoBehaviour {
         panelGameOver.SetActive(true);
     }
 
+    public void activarWin()
+    {
+        panelWin.SetActive(true);
+    }
     public void recargarScena()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
