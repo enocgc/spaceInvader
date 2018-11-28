@@ -23,6 +23,7 @@ public class puntos : MonoBehaviour {
     void Start () {
         puntostexto.text = "Puntos :" + puntosvalor;
 	}
+    
 	
 	public void subirPuntos(int valor)
     {
@@ -50,7 +51,7 @@ public class puntos : MonoBehaviour {
     //guardar puntaje
     public void guardarPuntos() {
 
-        PlayerPrefs.SetInt("Best-score", Control_puntos.instance.puntoFinales);
+        //PlayerPrefs.SetInt("Best-score", Control_puntos.instance.puntoFinales);
     }
     
     //leer puntaje

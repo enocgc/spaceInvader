@@ -32,4 +32,8 @@ public class controlmenu : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void backtomenu()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }
