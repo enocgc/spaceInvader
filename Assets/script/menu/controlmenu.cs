@@ -21,11 +21,13 @@ public class controlmenu : MonoBehaviour {
 
     public void activarGameOver()
     {
+        GameControl.instance.guardarPuntos();
         panelGameOver.SetActive(true);
     }
 
     public void activarWin()
     {
+        GameControl.instance.guardarPuntos();
         panelWin.SetActive(true);
     }
     public void recargarScena()

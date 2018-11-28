@@ -148,6 +148,9 @@ MonoBehaviour:
   puntostexto: {fileID: 615300877}
   cantidadEnemigos: 1
   scena: 1
+  puntostexto1: {fileID: 0}
+  puntostexto2: {fileID: 0}
+  puntostextohi: {fileID: 0}
 --- !u!4 &78343449
 Transform:
   m_ObjectHideFlags: 0

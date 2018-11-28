@@ -21,8 +21,9 @@ public class puntos : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-        puntostexto.text = "Puntos :" + puntosvalor;
-	}
+        puntostexto.text = "Puntos :" + GameControl.instance.puntosActuales ;
+        puntosvalor= GameControl.instance.puntosActuales;
+    }
     
 	
 	public void subirPuntos(int valor)
@@ -32,6 +33,7 @@ public class puntos : MonoBehaviour {
         puntostexto.text = "Puntos :" + puntosvalor;
         cantidadEnemigos=(cantidadEnemigos-1);
         Debug.Log(cantidadEnemigos);
+        GameControl.instance.puntosActuales = GameControl.instance.puntosActuales + valor;
         if (cantidadEnemigos == 0)
         {
             if (scena == 5)
@@ -48,15 +50,5 @@ public class puntos : MonoBehaviour {
             
         }
     }// fin de subir puntos
-    //guardar puntaje
-    public void guardarPuntos() {
-
-        //PlayerPrefs.SetInt("Best-score", Control_puntos.instance.puntoFinales);
-    }
     
-    //leer puntaje
-        public int leerPuntaje()
-    {
-        return PlayerPrefs.GetInt("Best-score", 000);
-    }// fin de leerpuntaje
 }
